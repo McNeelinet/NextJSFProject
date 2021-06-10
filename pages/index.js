@@ -5,7 +5,9 @@ import Footer from '../components/footer'
 import Header from '../components/header'
 import Container from '../components/container'
 
-function About() {
+export default function About() {
+  // HTML основной страницы
+  // Срочно оформить
   return (
     <Container>
       <Head>
@@ -21,5 +23,3 @@ function About() {
     </Container>
   )
 }
-
-export default About

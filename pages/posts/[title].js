@@ -1,18 +1,16 @@
-import { useRouter } from 'next/router'
+import Image from 'next/image'
 
-// Настройки. Лучше не трогать
+// Импорт общих для всех страниц компонентов
 import Footer from '../../components/footer'
 import Header from '../../components/header'
 import Container from '../../components/container'
 import Head from 'next/head'
-import Image from 'next/image'
 
+// Импорт настроек стрпницы
 import content from '../../data/posts.json'
 import styles from '../../styles/blog.module.css'
 
 const Post = ( post ) => {
-    const router = useRouter()
-
     // HTML страницы поста.
     // CSS файл для нее - blog.module.css
     // CSS файл для футера, хэдера и сонтейнера - Home.module.css
@@ -45,6 +43,8 @@ const Post = ( post ) => {
     )
 }
 
+// Создает маршруты для постов.
+// Не трогать, починить не смогу
 export async function getStaticPaths() {
     const posts = content.posts
 
