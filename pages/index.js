@@ -1,7 +1,17 @@
-// Тут должна быть главная страница сайта с описанием его возможностей, описанием команды и пр. и пр.
+import Footer from '../components/footer'
+import Header from '../components/header'
+import Container from '../components/container'
 
 function About() {
-  return (<a href="/revievs">Обзоры(это ссылка)</a>)
+  return (
+    <Container>
+      <Header>
+      </Header>
+      <a href="/revievs">Обзоры(это ссылка)</a>
+      <Footer>
+      </Footer>
+    </Container>
+  )
 }
 
 export default About
