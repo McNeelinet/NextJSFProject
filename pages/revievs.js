@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <Container>
       <Head>
-        <title>Create Next App</title>
+        <title>Обзоры</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -25,19 +25,13 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Обзоры
         </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-         
-        </p>
-
+        
         {
           allPosts.map(function(post) {
             return (
-              <a href={"/posts/" + post.slug} className={styles.card}>
+              <a href={"/posts/" + post.title} className={styles.card}>
                 <h2>{post.title}</h2>
                 <p>{post.slug}</p>
               </a>

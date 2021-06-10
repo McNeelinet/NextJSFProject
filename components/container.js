@@ -1,6 +1,6 @@
 import styles from '../styles/Home.module.css'
 
-export default function Article({children}) {
+export default function Container({children}) {
     return(
         <>
             <div className={styles.container}>
