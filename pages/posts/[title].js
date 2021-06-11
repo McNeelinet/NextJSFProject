@@ -31,8 +31,8 @@ const Post = ( post ) => {
                         </h1>
                         Автор обзора: <div className={styles.author}>  { post.author } </div>
                     </div>
-                        <div className={styles.img}>
-                            <Image src={"/" + post.img} width='1280' height='720'></Image>
+                        <div className={styles.img_box}>
+                            <Image src={"/" + post.img} width='1280' height='720' className={styles.img}></Image>
                         </div>
                     <div className={styles.postContent} dangerouslySetInnerHTML={{ __html: post.content }}></div>
                 </div>
